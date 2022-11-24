@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="22-11.css">
+</head>
+<body>
+    <div class="image" style="height: 100vh;">
+
+        <div class="info">
+            <h1>Singer:
+                DARSHAN RAVAL
+            </h1>
+            <p>
+                Darshan Raval is an Indian singer, composer, actor, and songwriter.<br>
+                He sings predominantly in Hindi along with Gujarati and Telugu. <br>
+                He was the first runner-up in the StarPlus music reality show, India's Raw Star <br>in 2014.
+
+                <br><br>
+                Birth Date: 18 October 1994
+
+                <br><br>
+                Record labels: Indie Music Label, T-Series, Sony Music India
+
+                <br><br>
+                Nationality: Indian
+
+                <br><br>
+                Parents: Rajal Raval, Rajendra Raval
+
+                <br><br>
+                Genre: Indian pop, Indian Film Pop, Filmi, Devotional
+            </p>    
+        </div>
+
+        <div class="container">
+            <div class="socialmedia">
+              <div class="socialmedia-buttons" :class="buttonsAnimate">
+                <div class="button button--instagram">Instagram</div>
+                <div class="button button--facebook">Facebook</div>
+              </div>
+              <div class="socialmedia-content" @click="clickCard = !clickCard, buttonAnimate = !buttonAnimate" :class="cardAnimate">
+                <div class="socialmedia-photo"></div>
+                <div class="socialmedia-title">
+                  <div>DARSHAN RAVAL</div>
+                  <div>@darshanravaldz</div>
+                </div>
+                <div class="socialmedia-bottom">
+                  <div class="socialmedia1">
+                    <h3>INSTAGRAM</h3>
+                    <p>15.5M</p>
+                  </div>
+                
+                  <div class="socialmedia1">
+                    <h3>FACEBOOK</h3>
+                    <p>7.5M</p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+    </div>
+</body>
+</html>

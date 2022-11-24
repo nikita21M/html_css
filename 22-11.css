@@ -1,0 +1,136 @@
+.image{
+    background-image: url(../IMAGES/download\ \(1\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1.5;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #29323c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.info h1{
+    padding-top: 150px;
+    color: white;
+    margin-left: 200px;
+    font-size: xx-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
+.info h1:hover{
+    color: red;
+    text-decoration: underline;
+    font-style: italic;
+}
+.info p{
+    padding-top: 20px;
+    color: white;
+    margin-left: 200px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.align-center, .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  width: auto;
+  border-radius: 4px;
+  border: 1px solid #29323c;
+  text-align: center;
+  padding: 12px 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 400px;
+  margin-top: -520px;
+}
+.container:hover{
+    scale: 1.1;
+}
+.socialmedia {
+  position: relative;
+  width: 328px;
+  height: 452px;
+  cursor: pointer;
+}
+.socialmedia-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 328px;
+  height: 452px;
+  border-radius: 4px;
+  box-shadow: 0 15px 15px 0 rgb(118, 112, 112);
+  background:white;
+}
+.socialmedia-content > * {
+  pointer-events: none;
+}
+.socialmedia-content--animate {
+  filter: blur(2px);
+  transform: perspective(600px) rotateY(60deg) translateX(-60px) scale(0.7, 0.7);
+}
+.socialmedia-buttons {
+  position: absolute;
+  z-index: -1;
+  width: 164px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -164px;
+  transition: 0.24s all;
+}
+.socialmedia-photo {
+  width: 80%;
+  height: 290px;
+  background: url("../IMAGES/darshan.jfif");
+  background-position: center;
+  background-size: 95%;
+  margin-top: 10px;
+}
+.socialmedia-title {
+  padding-top: 24px;
+  height: 84px;
+  text-align: center;
+}
+.socialmedia-title div:first-child {
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: rgb(20, 20, 222);
+}
+.socialmedia-title div:last-child {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(208, 71, 71);
+  margin-top: 8px;
+}
+.socialmedia-bottom {
+  padding-bottom: 24px;
+  height: 84px;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-around;
+}
+.socialmedia1 {
+  text-align: center;
+}
+.socialmedia1 h3{
+  font-weight: 300;
+  font-size: 11px;
+  color: gray;
+  margin-bottom: 4px;
+}
+.socialmedia p {
+  font-weight: 550;
+}
